@@ -3,16 +3,10 @@ public abstract class  CreditCard {
     private String cardHolder;
     private String csc;
 
-
-    public  CreditCard (String cardHolder){
+    public  CreditCard (String cardHolder, long cardNumber) {
         this.cardHolder = cardHolder;
-        this.cardNumber = generateCardNumber();
+        this.cardNumber = cardNumber;
         this.csc = generateCsc();
-    }
-
-
-    public long generateCardNumber(){
-        return 0;
     }
 
     public String generateCsc(){

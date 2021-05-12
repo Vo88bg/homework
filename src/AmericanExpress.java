@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class AmericanExpress extends CreditCard{
 
-    public AmericanExpress(String cardHolder, long cardNumber) {
-        super(cardHolder);
+    public AmericanExpress( long cardNumber, String cardHolder) {
+        super(cardHolder, cardNumber);
     }
 
 
