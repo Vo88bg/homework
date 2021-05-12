@@ -1,14 +1,12 @@
-public class CreditCardFactory implements AbstractFactory<CreditCard>{
+public class CreditCardFactory {
 
-    @Override
-    public CreditCard create(int creditScore, String cardHolder){
+   static public CreditCardFactory create(int creditScore, String cardHolder){
         if(creditScore > 650){
-            return new Visa(cardHolder, 234234l);
+            return new VisaFactory();
         }else{
-            return new AmericanExpress(cardHolder);
+            return new AmericanExpressFactory();
         }
+
     }
-
-
 
 }

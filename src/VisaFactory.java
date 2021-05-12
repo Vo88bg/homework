@@ -1,7 +1,6 @@
 import java.util.Random;
 
-public class VisaFactory {
-
+public class VisaFactory extends CreditCardFactory{
 
     public Visa createVisa(String cardHolder){
         long result = 0;
