@@ -1,4 +1,4 @@
-public class VisaFactory {
+public class VisaFactory extends CreditCardFactory{
 
     public Visa create(){
 

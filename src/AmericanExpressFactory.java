@@ -1,4 +1,4 @@
-public class AmericanExpressFactory {
+public class AmericanExpressFactory extends CreditCardFactory{
 
 
     public AmericanExpress create(){
