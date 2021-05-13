@@ -1,8 +1,8 @@
-public class VisaFactory extends CreditCardFactory{
+public class VisaFactory implements AbstractFactory{
 
-    public Visa create(){
-
-       return new Visa(234L, "");
+    @Override
+    public Visa create(String cardHolder){
+       return new Visa(CreditCardFactory.generateCardNumber(true), cardHolder);
     }
 
 }

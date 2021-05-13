@@ -1,9 +1,8 @@
-public class AmericanExpressFactory extends CreditCardFactory{
+public class AmericanExpressFactory implements AbstractFactory{
 
-
-    public AmericanExpress create(){
-
-        return new AmericanExpress(234L, "");
+    @Override
+    public AmericanExpress create(String cardHolder){
+        return new AmericanExpress(CreditCardFactory.generateCardNumber(false), cardHolder);
     }
 
 }
